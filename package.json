@@ -1,0 +1,24 @@
+{
+  "name": "kfug-appli",
+  "version": "1.0.0",
+  "description": "- ホーム（home.html） - 勉強会詳細（sessionDetail.html） - 概要（aboutKFUG.html） - お問い合わせ（contact.html）",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sshono1210/kfug-appli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sshono1210/kfug-appli/issues"
+  },
+  "homepage": "https://github.com/sshono1210/kfug-appli#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.3.2"
+  }
+}
