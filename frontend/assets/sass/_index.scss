@@ -40,13 +40,17 @@
 .session_place {
   display: inline-block;
 }
-.session_timeIcon,
-.session_placeIcon {
+.session_timeIcon {
   font-size: $fontsize-base * 1.3;
 }
 .session_placeIcon {
+  font-size: $fontsize-base * 1.4;
+}
+.session_placeIcon {
+  vertical-align: top;
   padding-left: 0.2rem;
 }
 .session_place {
+  width: 90%;
   font-size: $fontsize-base * 0.9;
 }
