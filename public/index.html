@@ -167,6 +167,15 @@
         </a>
 
     </div>
+    <script>
+        $(function(){
+            $(".button-collapse").sideNav();
+
+            $.get("/data.json").done(function(data){
+                console.log(data)
+            })
+        })
+    </script>
 
 </body>
 </html>
