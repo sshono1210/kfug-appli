@@ -1,0 +1,12 @@
+@import "./___mixin.scss";
+@import "./___reset.scss";
+@import "./__header.scss";
+@import "./_index.scss";
+
+* {
+  font-size: $fontsize-base;
+  color: $fontcolor-base;
+}
+div, p, h1, h2, h3, ul, li, a {
+  //border: 1px solid lightgray;
+}
