@@ -4,21 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
     <title>ホーム</title>
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
     <script src="https://use.fontawesome.com/4bf080d198.js"></script>
     <link rel="stylesheet" href="./css/common.css">
 </head>
 <body>
-    <div class="l-header">
-        <div class="row">
-            <a href="./index.html">
-                <div class="col s2 header_menuBtnBox">
-                    <i class="header_menuBtn fa fa-bars" aria-hidden="true"></i>
-                </div>
+
+    <!--<div class="l-sideMenu">-->
+    <nav>
+        <div class="nav-wrapper">
+            <!--<a href="#!" class="brand-logo">Logo</a>-->
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+                <i class="header_menuBtn fa fa-bars" aria-hidden="true"></i>
             </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">Javascript</a></li>
+                <li><a href="mobile.html">Mobile</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">Javascript</a></li>
+                <li><a href="mobile.html">Mobile</a></li>
+            </ul>
         </div>
-    </div>
+    </nav>
+    <!--</div>-->
 
     <div class="l-pageArea--home">
         <a href="./detail.html">
@@ -28,7 +43,7 @@
                         <div class="session_date">1/1<br>（金）</div>
                     </div>
                     <div class="col s9">
-                        <div class="session_fullEmpty">
+                        <div class="session_empty">
                             参加可能
                         </div>
                         <h2 class="session_name">Webデザインもしゃもしゃ会</h2>
@@ -54,7 +69,7 @@
                         <div class="session_date">1/1<br>（金）</div>
                     </div>
                     <div class="col s9">
-                        <div class="session_fullEmpty">
+                        <div class="session_empty">
                             参加可能
                         </div>
                         <h2 class="session_name">Webデザインもしゃもしゃ会</h2>
@@ -80,7 +95,7 @@
                         <div class="session_date">1/1<br>（金）</div>
                     </div>
                     <div class="col s9">
-                        <div class="session_fullEmpty">
+                        <div class="session_empty">
                             参加可能
                         </div>
                         <h2 class="session_name">Webデザインもしゃもしゃ会</h2>
@@ -106,7 +121,7 @@
                         <div class="session_date">1/1<br>（金）</div>
                     </div>
                     <div class="col s9">
-                        <div class="session_fullEmpty">
+                        <div class="session_empty">
                             参加可能
                         </div>
                         <h2 class="session_name">Webデザインもしゃもしゃ会</h2>
@@ -132,7 +147,7 @@
                         <div class="session_date">1/2<br>（土）</div>
                     </div>
                     <div class="col s9">
-                        <div class="session_fullEmpty">
+                        <div class="session_full">
                             キャンセル待ち
                         </div>
                         <h2 class="session_name">Webデザインもくもく会</h2>
@@ -152,5 +167,6 @@
         </a>
 
     </div>
+
 </body>
 </html>

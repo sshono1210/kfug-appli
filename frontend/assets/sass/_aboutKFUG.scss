@@ -1,0 +1,40 @@
+.aboutKFUG_kfugLogo {
+  margin-top: 0.5rem;
+  display: block;
+  width: 90VW;
+  margin-right: auto;
+  margin-left: auto;
+}
+.aboutKFUG_description {
+  line-height: 1.7rem;
+}
+.aboutSession,
+.aboutMokuMosha,
+.aboutEvent {
+  border: 1px solid $clr-lightBlue;
+  margin-bottom: 1.5rem;
+}
+.aboutSession_title,
+.aboutMokuMosha_title,
+.aboutEvent_title {
+  background-color: $clr-lightBlue;
+  color: white;
+  line-height: 2rem;
+  font-size: $fontsize-base * 1.1;
+}
+.aboutSession_description,
+.aboutMokuMosha_description,
+.aboutEvent_description {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.7rem;
+}
+.aboutSession_important,
+.aboutMokuMosha_important,
+.aboutEvent_important {
+  color: $clr-deepOrange;
+  font-weight: bold;
+}
+.aboutSession {
+  margin-top: 1rem;
+}
