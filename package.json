@@ -20,5 +20,8 @@
     "gulp": "^3.9.1",
     "gulp-jade": "^1.1.0",
     "gulp-sass": "^2.3.2"
+  },
+  "dependencies": {
+    "gulp-connect-php": "0.0.8"
   }
 }

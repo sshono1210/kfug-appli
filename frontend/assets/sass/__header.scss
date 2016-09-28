@@ -1,6 +1,11 @@
 .nav-wrapper {
   background-color: white;
 }
+.header_returnBtnBox {
+  &:hover {
+    cursor: pointer;
+  }
+}
 .header_menuBtn,
 .header_returnBtn {
   padding-left: 1rem;

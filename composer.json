@@ -1,0 +1,14 @@
+{
+    "name": "root/kfug-appli",
+    "authors": [
+        {
+            "name": "sshono",
+            "email": "s.shosho1210@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.2",
+        "illuminate/http": "^5.3",
+        "nesbot/carbon": "^1.21"
+    }
+}

@@ -1,6 +1,7 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass");
 var browser = require("browser-sync");
+var php = require("gulp-connect-php");
 
 // gulp：watchが走る
 gulp.task("default", ["watch"]);
@@ -23,12 +24,27 @@ gulp.task("watch", function(){
 
 // gulp server：ブラウザがたつ＆watchが走る
 gulp.task("server", function(){
-    browser.init({
-        server: {
-            baseDir: "./public"
-        },
+
+    var config = {
+        proxy: "127.0.0.1:8000",
         open: "external"
+        //notify: false
+    };
+
+    var server = {
+        base: "./public"
+    };
+
+    php.server(server,() => {
+        browser(config)
     });
+
+    gulp.watch(`./public/**/*`, () => {
+        setTimeout(function(){
+            browser.reload();
+        },500);
+    });
+
     gulp.watch([
         "./frontend/assets/sass/**/*.scss"
     ], function(){
