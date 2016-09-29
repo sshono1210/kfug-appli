@@ -24,12 +24,15 @@
   border: 1px solid $clr-deepOrange;
   color: $clr-deepOrange;
 }
-.session_date {
+.session_dateBox {
   margin-top: 0.5rem;
   text-align: center;
   background-color: $clr-lightBlue;
-  color: white;
+}
+.session_date,
+.session_dayOfTheWeek {
   font-size: $fontsize-base * 1.2;
+  color: white;
 }
 .session_name {
   margin-top: 0.5rem;

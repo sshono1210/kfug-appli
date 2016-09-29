@@ -44,17 +44,21 @@
                     <section class="session">
                         <div class="row">
                             <div class="col s3">
-                                <div class="session_date">{{post.started_at}}</div>
+                                <div class="session_dateBox">
+                                    <div class="session_date">{{post.date}}</div>
+                                    <div class="session_dayOfTheWeek">{{post.dayOfTheWeek}}</div>
+                                </div>
                             </div>
                             <div class="col s9">
-                                <div class="session_empty">
-                                    参加可能
-                                </div>
+                                <div class="session_fullOrEmpty" v-bind:class="{'full': isFull, 'empty': isEmpty}"></div>
+                                <!--<div class="session_full" v-else>-->
+                                    <!--キャンセル待ち-->
+                                <!--</div>-->
                                 <h2 class="session_name">{{post.title}}</h2>
 
                                 <div class="session_timeBox">
                                     <i class="fa fa-clock-o session_timeIcon" aria-hidden="true"></i>
-                                    <p class="session_time">{{post.started_at}}~</p>
+                                    <p class="session_time">{{post.time}} ~</p>
                                 </div>
 
                                 <div class="session_placeBox">
@@ -72,7 +76,7 @@
     <div class="l-pageArea--sessionDetail" v-else>
         <div class="row">
             <div class="col s12 sessionDetail_dateFullEmptyBox">
-                <div class="sessionDetail_date">{{postDetail.started_at}}</div>
+                <div class="sessionDetail_date">{{postDetail.date}}{{postDetail.dayOfTheWeek}}</div>
                 <div class="sessionDetail_empty">参加可能</div>
             </div>
         </div>

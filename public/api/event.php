@@ -24,6 +24,15 @@ $res = $client->get($url, [
 //$date->format("M/d");
 $data = json_decode($res->getBody(), true);
 
+setlocale(LC_ALL, 'ja_JP.UTF-8');
+//echo Carbon::now()->formatLocalized('%Y年%m月%d日(%a)');
+
+foreach ($data["events"] as $key=>$event) {
+    $data["events"][$key]["date"] = Carbon::createFromFormat(DateTime::ATOM,$event["started_at"])->formatLocalized('%m/%d');
+    $data["events"][$key]["dayOfTheWeek"] = Carbon::createFromFormat(DateTime::ATOM,$event["started_at"])->formatLocalized('(%a)');
+    $data["events"][$key]["time"] = Carbon::createFromFormat(DateTime::ATOM,$event["started_at"])->format('H : i');
+}
+
 $response = JsonResponse::create($data, 200, []);
 $response->send();
 
