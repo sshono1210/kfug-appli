@@ -16,7 +16,8 @@ $client = new Client();
 $res = $client->get($url, [
     "query" => [
         "series_id" => 1100,
-        "start" => $start
+        "start" => $start ,
+        "order" => 2
     ]
 ]);
 
