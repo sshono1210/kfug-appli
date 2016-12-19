@@ -7,7 +7,8 @@
   border-bottom: 2px solid lightgrey;
 }
 .session_full,
-.session_empty {
+.session_empty,
+.session_ended {
   line-height: 1.5rem;
   font-size: $fontsize-base * 0.9;
   margin-top: 0.5rem;
@@ -23,6 +24,10 @@
 .session_full {
   border: 1px solid $clr-deepOrange;
   color: $clr-deepOrange;
+}
+.session_ended {
+  border: 1px solid $fontcolor-base;
+  color: $fontcolor-base;
 }
 .session_dateBox {
   margin-top: 0.5rem;

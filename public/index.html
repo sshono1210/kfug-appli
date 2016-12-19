@@ -50,10 +50,15 @@
                                 </div>
                             </div>
                             <div class="col s9">
-                                <div class="session_fullOrEmpty" v-bind:class="{'full': isFull, 'empty': isEmpty}"></div>
-                                <!--<div class="session_full" v-else>-->
-                                    <!--キャンセル待ち-->
-                                <!--</div>-->
+                                <div class="session_empty" v-if="isAcceptable(post)">
+                                    参加可能
+                                </div>
+                                <div class="session_full" v-if="!isAcceptable(post)">
+                                    キャンセル待ち
+                                </div>
+                                <div class="session_ended" v-if="ended(post)">
+                                    イベント終了
+                                </div>
                                 <h2 class="session_name">{{post.title}}</h2>
 
                                 <div class="session_timeBox">
